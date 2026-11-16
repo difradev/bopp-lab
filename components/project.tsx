@@ -32,7 +32,7 @@ export function Project({ project }: ProjectProps) {
                 active
               </span>
             )}
-            <p className="text-3xl">{project.dropNumber}</p>
+            <p className="text-3xl font-mono">{project.dropNumber}</p>
             <LabelProject type={project.type} />
           </div>
           <div className="flex flex-col gap-0">
