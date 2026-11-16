@@ -1,4 +1,4 @@
-import { Project } from "@/components/project";
+import { ProjectCard } from "@/components/project";
 import { Project as ProjectType } from "@/types/project";
 import { promises as fs } from "fs";
 
@@ -55,7 +55,7 @@ export default async function Home() {
       </div>
       <div className="flex flex-col gap-4 mt-8">
         {projects.map((p: ProjectType, idx: number) => (
-          <Project key={idx} project={p} />
+          <ProjectCard key={idx} project={p} />
         ))}
       </div>
     </div>

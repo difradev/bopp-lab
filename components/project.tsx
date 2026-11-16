@@ -5,8 +5,8 @@ type ProjectProps = {
   project: Project;
 };
 
-export function Project({ project }: ProjectProps) {
-  const LabelProject = ({ type }: ProjectType) => {
+export function ProjectCard({ project }: ProjectProps) {
+  const LabelProject = ({ type }: { type: string }) => {
     const labelMap: Record<string, string> = {
       web: "bg-[#ed1c24] text-white",
     };
@@ -33,7 +33,7 @@ export function Project({ project }: ProjectProps) {
               </span>
             )}
             <p className="text-3xl font-mono">{project.dropNumber}</p>
-            <LabelProject type={project.type} />
+            <LabelProject type={project.type as unknown as string} />
           </div>
           <div className="flex flex-col gap-0">
             <p className="text-xl font-bold">{project.name}</p>
