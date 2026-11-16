@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist_Mono, Bowlby_One } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
+import { Suspense } from "react";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -26,7 +27,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full">
         <Header />
-        <div className="font-mono max-w-6xl mx-auto mt-8">{children}</div>
+        <div className="font-mono max-w-6xl mx-auto mt-8">
+          <Suspense fallback={""}>{children}</Suspense>
+        </div>
       </body>
     </html>
   );

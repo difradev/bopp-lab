@@ -1,6 +1,15 @@
 import { Project } from "@/components/project";
+import { Project as ProjectType } from "@/types/project";
+import { promises as fs } from "fs";
 
-export default function Home() {
+export default async function Home() {
+  "use cache";
+  const projectsJson = await fs.readFile(
+    `${process.cwd()}/app/data/projects.json`,
+    "utf-8",
+  );
+  const projects = JSON.parse(projectsJson).projects as ProjectType[];
+
   return (
     <div className="w-full flex flex-col">
       <div className="flex gap-4 w-full">
@@ -17,7 +26,9 @@ export default function Home() {
       </div>
       <div className="relative w-screen h-4 bg-[repeating-linear-gradient(135deg,#ffffff_0px,#ffffff_8px,#ed1c24_8px,#ed1c24_10px)] left-1/2 -translate-1/2 mt-16" />
       <div className="flex flex-col gap-4 mt-8">
-        <Project />
+        {projects.map((p: ProjectType, idx: number) => (
+          <Project key={idx} project={p} />
+        ))}
       </div>
     </div>
   );

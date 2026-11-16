@@ -1,0 +1,20 @@
+{
+    "projects": [
+        {
+            "dropNumber": "002",
+            "name": "1 Liter",
+            "description": "How many minutes of your life do you have to sell to afford a liter of gasoline? Because one liter doesn't cost everyone the same. In some countries, it takes just a few minutes",
+            "link": "https://www.1liter.club",
+            "type": "web",
+            "isActive": true
+        },
+        {
+            "dropNumber": "001",
+            "name": "Arte Enigmistica",
+            "description": "",
+            "link": "https://www.artenigmistica.it",
+            "type": "web",
+            "isActive": true
+        }
+    ]
+}
