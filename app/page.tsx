@@ -12,14 +12,14 @@ export default async function Home() {
 
   return (
     <div className="w-full flex flex-col gap-4">
-      <div className="flex gap-4 w-full">
+      <div className="flex gap-4 w-full group">
         <p className="slogan">
           <span>Project.</span>
           <span>Experiment.</span>
           <span>Games.</span>
         </p>
         <div className="flex justify-center items-center w-full">
-          <p className="font-bowlby-one rotate-6 text-[#ed1c24] lg:text-[12rem] text-9xl">
+          <p className="font-bowlby-one rotate-6 text-[#ed1c24] lg:text-[12rem] text-9xl inline-block transition-transform duration-300 ease-out group-hover:rotate-[210deg]">
             !
           </p>
         </div>
