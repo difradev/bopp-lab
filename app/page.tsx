@@ -55,7 +55,7 @@ export default async function Home() {
       </div>
       <div className="flex flex-col gap-4 mt-8">
         {projects.map((p: ProjectType, idx: number) => (
-          <ProjectCard key={idx} project={p} />
+          <ProjectCard key={idx} project={p} numbsOfProj={projects.length} />
         ))}
       </div>
     </div>

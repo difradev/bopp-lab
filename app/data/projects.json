@@ -1,6 +1,9 @@
 {
     "projects": [
         {
+            "isNextDrop": true
+        },
+        {
             "dropNumber": "002",
             "name": "1 Liter",
             "description": "How many minutes of your life do you have to sell to afford a liter of gasoline? Because one liter doesn't cost everyone the same. In some countries, it takes just a few minutes",
@@ -11,7 +14,7 @@
         {
             "dropNumber": "001",
             "name": "Arte Enigmistica",
-            "description": "",
+            "description": "Digital Museum of an Unwritten Italian Tradition.",
             "link": "https://www.artenigmistica.it",
             "type": "web",
             "isActive": true

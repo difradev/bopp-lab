@@ -7,4 +7,5 @@ export type Project = {
   type: ProjectType;
   link?: string;
   isActive: boolean;
+  isNextDrop?: boolean;
 };
