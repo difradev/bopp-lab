@@ -14,8 +14,8 @@ export default async function Home() {
     <div className="w-full flex flex-col gap-4">
       <div className="flex gap-4 w-full group">
         <p className="slogan">
-          <span>Project.</span>
-          <span>Experiment.</span>
+          <span>Projects.</span>
+          <span>Experiments.</span>
           <span>Games.</span>
         </p>
         <div className="flex justify-center items-center w-full">
