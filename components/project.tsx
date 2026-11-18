@@ -58,7 +58,7 @@ export function ProjectCard({ project, numbsOfProj }: ProjectProps) {
               </span>
             )}
             <p className="text-3xl font-mono">
-              {padNumber(project.dropNumber)}
+              {padNumber(+project.dropNumber)}
             </p>
             <LabelProject type={project.type as unknown as string} />
           </div>
