@@ -3,6 +3,7 @@ import { Geist_Mono, Bowlby_One, Poppins } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
 import { Suspense } from "react";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full">
         <Header />
         <div className="max-w-6xl mx-auto mt-8 font-poppins lg:p-0 px-4">
+          <Analytics />
           <Suspense fallback={""}>{children}</Suspense>
         </div>
       </body>
