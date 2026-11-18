@@ -3,7 +3,7 @@ import Image from "next/image";
 export function Header() {
   return (
     <div className="w-full py-8 bg-red-800 font-bowlby-one">
-      <div className="max-w-6xl mx-auto flex justify-between items-center">
+      <div className="max-w-6xl mx-auto flex justify-between items-center lg:p-0 px-4">
         <Image
           src="images/boppscontornato.svg"
           height={100}

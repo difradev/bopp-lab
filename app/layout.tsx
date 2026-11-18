@@ -32,7 +32,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full">
         <Header />
-        <div className="font-mono max-w-6xl mx-auto mt-8">
+        <div className="font-mono max-w-6xl mx-auto mt-8 font-poppins lg:p-0 px-4">
           <Suspense fallback={""}>{children}</Suspense>
         </div>
       </body>

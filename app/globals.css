@@ -29,6 +29,14 @@ body {
     color: #ed1c24;
 }
 
+@media (max-width: 768px) {
+    .slogan {
+        font-size: clamp(1.8rem, 9vw, 3rem);
+        line-height: 1.05;
+        letter-spacing: -1px;
+    }
+}
+
 .slogan span {
     display: block;
     width: fit-content;

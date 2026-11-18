@@ -19,7 +19,7 @@ export default async function Home() {
           <span>Games.</span>
         </p>
         <div className="flex justify-center items-center w-full">
-          <p className="font-bowlby-one rotate-6 text-[#ed1c24] text-[12rem]">
+          <p className="font-bowlby-one rotate-6 text-[#ed1c24] lg:text-[12rem] text-9xl">
             !
           </p>
         </div>
