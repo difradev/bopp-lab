@@ -10,7 +10,12 @@ export function Header() {
           width={200}
           alt="Bopp!LAB"
         />
-        <p className="text-white font-semibold text-lg uppercase">Hey!</p>
+        <a
+          href="mailto:hey@bopplab.it"
+          className="text-[#ed1c24] font-semibold text-lg uppercase transition-all duration-300 hover:text-white hover:animate-pulse hover:scale-125 cursor-pointer"
+        >
+          Hey!
+        </a>
       </div>
     </div>
   );
